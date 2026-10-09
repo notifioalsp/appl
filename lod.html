@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loading...</title>
+    <meta http-equiv="refresh" content="4;url=index2.html"> <!-- Redirect after 5 seconds -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .apple-logo {
+            width: 60px;
+            margin-bottom: 30px;
+        }
+
+        .loader {
+            border: 10px solid #f3f3f3;
+            border-top: 10px solid #000;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 1s linear infinite;
+        }
+
+        .text {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #555;
+            text-align: center;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="apple-logo">
+    <div class="loader"></div>
+    <div class="text">Loading, please wait...</div>
+
+</body>
+</html>
